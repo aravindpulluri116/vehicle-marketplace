@@ -1,0 +1,130 @@
+.buy-page-container {
+  background: linear-gradient(to bottom right, #e0f7ff, #ffffff);
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.buy-content {
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.5s ease;
+}
+
+.buy-content h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #002b5c;
+  margin-bottom: 25px;
+}
+
+.buy-content h3 {
+  font-size: 22px;
+  margin: 15px 0 5px;
+  color: #003366;
+}
+
+.buy-content h4 {
+  font-size: 18px;
+  margin: 25px 0 10px;
+  color: #004080;
+}
+
+.buy-car-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.buy-price {
+  font-size: 20px;
+  color: #007a33;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.buy-tagline {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.payment-options {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.payment-options li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.payment-form label {
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  color: #002b5c;
+}
+
+.payment-form input {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.proceed-button {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #002b5c;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.proceed-button:hover {
+  background-color: #004080;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .buy-content {
+    padding: 20px;
+  }
+
+  .buy-content h2 {
+    font-size: 24px;
+  }
+
+  .proceed-button {
+    width: 100%;
+  }
+}
